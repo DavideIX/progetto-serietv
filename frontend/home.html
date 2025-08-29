@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="utf-8"> <!-- Imposta la codifica dei caratteri per la pagina -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Rende la pagina responsive -->
+    <title>Serie TV</title> <!-- Titolo della pagina -->
+
+    <!-- Include al libreria jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <!-- Include Bootbox.js per creare finestre di dialogo personalizzate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.3/bootbox.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Include Font Awesome per utilizzare icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Collegamento al file CSS personalizzato per lo stile dell'applicazione -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Script JavaScript generale per funzionalità condivise -->
+    <script src="js/general.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container" class="container-fluid"> <!-- Contenitore principale della pagina -->
+        <div class="page-header"> <!-- Intestazione della pagina -->
+            <h1 id="page-title">Serie TV</h1> <!-- Titolo della pagina -->
+        </div>
+        <div id="page-content"></div> <!-- Contenitore per il contenuto dinamico della pagina -->
+    </div>
+
+    <!-- Inclusione degli script JavaScript per le funzionalità specifiche -->
+    <script src="js/auth.js"></script>
+    <!-- Script per la gestione dell'autenticazione -->
+    <script src="js/create.js"></script>
+    <!-- Script per la creazione di nuove serie -->
+    <script src="js/delete.js"></script>
+    <!-- Script per l'eliminazione di serie -->
+    <script src="js/readAll.js"></script>
+    <!-- Script per la lettura e la visualizzazione di tutte le serie -->
+    <script src="js/readOne.js"></script>
+    <!-- Script per la lettura e la visualizzazione dei dettagli di una singola serie -->
+    <script src="js/search.js"></script>
+    <!-- Script per la ricerca di serie -->
+    <script src="js/update.js"></script>
+    <!-- Script per l'aggiornamento dei dettagli di una serie -->
+
+    <script>
+        $(document).ready(function () { // Quando il documento è pronto viene eseguita la funzione anonima
+            checkSession(); // Funzione che controlla se l'utente è autenticato, ossia se è presente una sessione attiva
+        });
+    </script>
+
+</body>
+
+</html>
+

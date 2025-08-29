@@ -1,0 +1,22 @@
+# Esclude file di configurazione e credenziali personali 
+backend/dataMgr/Database.php
+
+# Esclude dump del database con dati reali
+backend/dataMgr/serietv.sql
+
+# Esclude file temporanei, di sistema e di ambiente (non utili al progetto, solo locali)
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.env
+.env.*
+
+# Esclude cartelle e file di configurazione degli editor (personali, non necessari per altri)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Esclude backup e file temporanei creati dagli editor
+*~

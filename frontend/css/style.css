@@ -1,0 +1,193 @@
+/* Layout Generale */
+body {
+    background-color: #f8f9fa; /* Colore di sfondo della pagina */
+    color: #333; /* Colore del testo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Definizione del font */
+    line-height: 1.6; /* Interlinea */
+    padding-top: 60px; /* Spazio sopra il contenuto */
+}
+
+/* div principale che contiene tutto il contenuto */
+.container-fluid { 
+    padding: 20px; /* Spaziatura interna */
+    max-width: 1400px; /* Larghezza massima */
+    margin: 0 auto; /* Centra il contenitore nella viewport, ossia la finestra del browser */
+}
+
+/* Intestazione fissa; barra superiore sempre visibile che contiene bottone logout */
+.top-header {
+    position: fixed; /* Mantiene l'elemento fisso rispetto al bordo superiore della finestra del browser */
+    top: 0; /* Distanza dal bordo superiore */
+    right: 0; /* Distanza dal bordo destro */
+    padding: 10px 20px; /* Spaziatura interna per gli elementi dell'intestazione */
+    z-index: 1000; /* Assicura che l'intestazione sia sempre visibile sopra gli altri elementi */
+    background-color: #f8f9fa; /* Colore di sfondo */
+    width: 100%; /* Occupa tutta la larghezza della finestra del browser */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Imposta un'ombra leggera */
+}
+
+/* Intestazione pagina dove c'è il titolo */
+.page-header {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px; /* Spaziatura inferiore */
+    border-radius: 8px; /* Bordo arrotondato */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Titolo della pagina */
+#page-title {
+    color: #2c3e50; /* Colore del testo */
+    font-size: 2.2rem; /* Dimensione del testo */
+    margin: 0; /* Elimina margini predefiniti */
+    font-weight: 600; /* Livello di grassetto */
+}
+
+/* Area contenuto principale dinamico */
+.main-content { 
+    margin-top: 20px; /* Spazio tra l'intestazione e il contenuto principale */
+}
+
+/* Contenitore  per la barra che contiene casella di ricerca ed eventuali bottoni per amministratore */
+.actions-container {
+    display: flex; /* Visualizza gli elementi in linea */
+    justify-content: space-between; /* Spaziatura tra gli elementi */
+    align-items: center; /* Allinea gli elementi al centro in verticale */
+    margin-bottom: 20px; /* Spazio prima del contenuto principale */
+}
+
+/* Casella di ricerca */
+#search-form {
+    width: 300px; /* Imposta larghezza fissa per la casella di ricerca */
+}
+
+/* Assicura che la casella di ricerca e il bottone siano allineati correttamente e che occupino tutto lo spazio disponibile */
+.input-group {
+    width: 100% !important; /* !important sovrascrive eventuali stili predefiniti */
+}
+
+/* Stili per la casella di ricerca */
+.search-keywords {
+    border-radius: 20px 0 0 20px !important; /* Bordo arrotondato solo a sinistra */
+    height: 38px; /* Altezza della casella di ricerca */
+    border: 1px solid #ddd; /* Stile del bordo */
+}
+
+/* Stili per il bottone di ricerca */
+.input-group-btn button {
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    background-color: #fff;
+    height: 38px;
+    display: flex; 
+    align-items: center;
+}
+
+/* Stili per i Form */
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+/* Definisce lo stile di un campo di input quando viene selezionato */
+.form-control:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+/* Stili per i textarea con classe form-control */
+textarea.form-control {
+    min-height: 100px;
+}
+
+/* Stili base per i bottoni */
+.btn {
+    padding: 8px 16px; /* Spaziatura interna */
+    font-weight: 500; /* Livello di grassetto */
+    border-radius: 20px; /* Bordo arrotondati */
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; /* Spaziatura tra il testo e l'icona */
+    border: none; /* Rimuove il bordo predefinito */
+}
+
+/* Cambia il colore del testo al passaggio del mouse sul bottone */
+.btn-primary:hover {
+    background-color: #24588b;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-danger:hover {
+    background-color: #540e0e;
+}
+
+/* Stili specifici per alcuni bottoni */
+/* Stile per il bottone di logout */
+#logout {
+    float: right; /* Allinea il bottone a destra */
+    height: 38px; /* Altezza del bottone */
+    padding: 0 16px; /* Spaziatura interna */
+    font-size: 14px;
+    background-color: #dc3545; 
+    color: white;
+}
+
+/* Cambia il colore del bottone al passaggio del mouse */
+#logout:hover {
+    background-color: #540e0e;
+}
+
+/* Stile per il bottone di aggiunta di una nuova serie */
+#add-series {
+    height: 38px;
+    padding: 0 16px;
+    font-size: 14px;
+    background-color: #555555;
+    color: white;
+}
+
+#add-series:hover {
+    background-color: #333333;
+}
+
+/* Stili per le tabelle */
+.table {
+    background-color: #fff; /* Colore di sfondo */
+    border-radius: 8px; /* Bordi arrotondati */
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Spazio sopra la tabella */
+}
+
+/* Stile per l'intestazione della tabella */
+.table th {
+    background-color: #f8f9fa; 
+    border-bottom: 2px solid #dee2e6; 
+    color: #2c3e50;
+    font-weight: 600; 
+    padding: 12px 16px;
+}
+
+/* Stile per le righe della tabella */
+.table td {
+    padding: 12px 16px; 
+    vertical-align: middle; /* Allinea il contenuto al centro verticalmente */
+}
+
+/* Stili per gli avvisi */
+.alert {
+    border-radius: 20px; /* Bordo arrotondato */
+    padding: 15px 20px; /* Spaziatura interna */
+    margin-bottom: 20px; /* Spaziatura inferiore */
+}
+
+.alert-info {
+    background-color: #e3f2fd; /* Colore di sfondo */
+    border-color: #bee5eb; /* Colore del bordo */
+    color: #0c5460; /* Colore del testo */
+}
