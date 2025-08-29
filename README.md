@@ -6,8 +6,6 @@ Applicazione web per la gestione di serie TV, realizzata per un esame universita
 
 ## Screenshot
 
-Di seguito alcuni screenshot dell'applicazione:
-
 ![Login](./screenshots/login.png)
 ![Registrazione](./screenshots/registrazione.png)
 ![Home](./screenshots/homeamministratore.png)
